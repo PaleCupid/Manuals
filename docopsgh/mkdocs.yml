@@ -1,0 +1,22 @@
+site_name: Мануалы CVGaudio
+theme:
+  name: material
+  features:
+    - navigation.instant # ускорение загрузки (SPA)
+    - navigation.tracking # динамический URL страницы 
+    - navigation.tabs # перенос названий документов в горизонтальное меню
+    - navigation.tabs.sticky # горизонтальное меню не скрывается при прокрутке
+    - navigation.indexes # главные страницы разделов не отображаются в меню
+    - navigation.top # вкл. кнопку возврата наверх
+
+nav:
+  - Руководство по установке:
+    - ig/index.md
+    - Создание репозитория:
+      - ig/repo_creation_gh.md
+      - ig/repo_creation_gl.md
+    - ig/mkdocs_installation.md
+  - Руководство администратора:
+    - ag/index.md
+    - ag/setup.md
+    - ag/pub_setup.md

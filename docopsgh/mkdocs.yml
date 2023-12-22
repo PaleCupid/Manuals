@@ -51,7 +51,7 @@ theme:
 #  hljs_languages:
 #    - yaml
 #    - rust
-  
+
 plugins:
   - search:
   - print-site

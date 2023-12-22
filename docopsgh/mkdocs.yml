@@ -1,4 +1,7 @@
-site_name: Мануалы CVGaudio
+site_name: PROCASTcable
+
+
+
 theme:
   name: material
   features:
@@ -16,7 +19,39 @@ nav:
       - ig/repo_creation_gh.md
       - ig/repo_creation_gl.md
     - ig/mkdocs_installation.md
+  - About: about.md
   - Руководство администратора:
     - ag/index.md
     - ag/setup.md
     - ag/pub_setup.md
+  - Bass: 'index.md'
+  - 'Абоба': 
+    - 'Абобус': 'about.md' 
+
+
+#theme: readthedocs
+
+theme: 
+  name: readthedocs
+  extra_css:
+  - style.css
+  nav_style: dark
+  logo: C:\Users\Egor-\Desktop\habr\docopsgh\docs\img\CVG_logo_2021_white.png
+  locale: en
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+
+
+#theme:
+#  name: mkdocs
+#  highlightjs: true
+#  hljs_languages:
+#    - yaml
+#    - rust
+  
+plugins:
+  - search:
+  - print-site

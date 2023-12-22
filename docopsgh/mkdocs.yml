@@ -54,23 +54,5 @@ theme:
 
 plugins:
   - search:
-      lang: 
-        - en
-        - ru
   - print-site:
-    add_to_navigation: true # Пункт "Распечатать PDF" в меню, см. след. парам. 
-    print_page_title: 'Распечатать PDF' # Название пункта, см. пред. парам.
-    add_print_site_banner: false # Выключает ненужный:) баннер на странице печати
-    add_table_of_contents: true # Включает отображение содержания
-    toc_title: 'Содержание' # Название раздела с содержанием
-    toc_depth: 6 # Количество уровней заголовков в содержании
-    add_full_urls: false # Отображение адресов ссылок, например: ссылка (https://site) 
-    enumerate_headings: false # Отключает нумерацию заголовков 
-    enumerate_figures: true # Включает нумерацию рисунков
-    add_cover_page: true # Включает отображение титульной страницы 
-    cover_page_template: "" # Путь к шаблону титульной страницы
-    path_to_pdf: "" # Путь к сгенерированному PDF-документу
-    include_css: true # Включает переопределение дефолтных CSS с целью кастомизации
-    enabled: true # Включает плагин
-    exclude: # Исключает страницы из PDF
-      - index.md
+      

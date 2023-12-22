@@ -3,6 +3,8 @@ site_name: CVGaudio Manuals
 
 
 theme:
+  favicon: img/favicon.ico
+  logo: img/CVG_logo_2021_white.png
   name: material
   features:
     - navigation.instant # ускорение загрузки (SPA)
@@ -24,18 +26,19 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: teal
+      primary: grey
       accent: purple 
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: teal
+      primary: grey
       accent: lime
 
 nav:
   - Мануалы:
     - Unicore_DX.md
+    - Power_Logic.md
   #- Руководство по установке:
   #  - ig/index.md
   #  - Создание репозитория:
@@ -76,6 +79,9 @@ nav:
 #    - rust
 
 plugins:
-  - search:
-  - print-site:
-      
+  - search
+  #- include:
+  #  src_path: docs/source
+  #- print-site:
+  
+    

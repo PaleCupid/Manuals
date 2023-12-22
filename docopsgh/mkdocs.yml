@@ -1,4 +1,4 @@
-site_name: PROCASTcable
+site_name: CVGaudio Manuals
 
 
 
@@ -12,37 +12,60 @@ theme:
     - navigation.indexes # главные страницы разделов не отображаются в меню
     - navigation.top # вкл. кнопку возврата наверх
 
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
+
 nav:
-  - Руководство по установке:
-    - ig/index.md
-    - Создание репозитория:
-      - ig/repo_creation_gh.md
-      - ig/repo_creation_gl.md
-    - ig/mkdocs_installation.md
-  - About: about.md
-  - Руководство администратора:
-    - ag/index.md
-    - ag/setup.md
-    - ag/pub_setup.md
-  - Bass: 'index.md'
-  - 'Абоба': 
-    - 'Абобус': 'about.md' 
+  - Мануалы:
+    - Unicore_DX.md
+  #- Руководство по установке:
+  #  - ig/index.md
+  #  - Создание репозитория:
+  #    - ig/repo_creation_gh.md
+  #    - ig/repo_creation_gl.md
+  #  - ig/mkdocs_installation.md
+  #- About: about.md
+  #- Руководство администратора:
+  #  - ag/index.md
+  #  - ag/setup.md
+  #  - ag/pub_setup.md
+  #- Bass: 'index.md'
+  #- 'Абоба': 
+  #  - 'Абобус': 'about.md' 
 
 
 #theme: readthedocs
 
-theme: 
-  name: readthedocs
-  extra_css:
-  - style.css
-  nav_style: dark
-  logo: C:\Users\Egor-\Desktop\habr\docopsgh\docs\img\CVG_logo_2021_white.png
-  locale: en
-  shortcuts:
-    help: 191    # ?
-    next: 78     # n
-    previous: 80 # p
-    search: 83   # s
+#theme: 
+#  name: readthedocs
+#  extra_css:
+#  - style.css
+#  nav_style: dark
+#  logo: C:\Users\Egor-\Desktop\habr\docopsgh\docs\img\CVG_logo_2021_white.png
+#  locale: en
+#  shortcuts:
+#    help: 191    # ?
+#    next: 78     # n
+#    previous: 80 # p
+#    search: 83   # s
 
 
 #theme:

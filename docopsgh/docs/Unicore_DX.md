@@ -2,6 +2,18 @@
 
 ##Подключение и использование
 
+# Table of Contents
+1. [Example](#example)
+2. [Example2](#example2)
+3. [Third Example](#third-example)
+4. [Fourth Example](#fourth-example)
+
+
+## Example
+## Example2
+## Third Example
+### [Fourth Example](https://www.cvg.ru/catalog/products/unicore/) 
+
 CVGAUDIO UNICORE DX устанавливается на DIN рейку. В комплект поставки не входит блок питания. Рекомендуем использовать блок питания для установки на DIN-рейку 12V/2A. Подключение 
 всех интерфейсных кабелей происходит через коннекторы с зажимом под винт.
 
@@ -38,3 +50,11 @@ MAC ADDRESS - мак адрес UNICORE DX
 Все остальные сетевые настройки при первом включении Вам не потребуются и к ним мы вернемся позднее. После того, как вы внесли все необходимые изменения - нажмите кнопку SAVE CHANGES в конце раздела. После этого необходимо перезапустить процессор. Для этого прокрутите интерфейс вверх и нажмите кнопку SYSTEM REBOOT. Без этого изменения не будут сохранены. Приблизительно через 10 секунд вы сможете увидеть CVGAUDIO UNICORE DX уже по новому адресу.
 
 ![Screenshot](img/Unicore_DX_3.png)
+
+<body>
+    <h2>HI GEEKSFORGEEKS USER'S</h2>
+    <form>
+        <input type="button" value="Print"
+               onclick="window.print()" />
+    </form>
+</body>

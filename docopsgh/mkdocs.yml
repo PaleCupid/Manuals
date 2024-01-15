@@ -5,7 +5,10 @@ site_name: CVGaudio Manuals
 theme:
   favicon: img/favicon.ico
   logo: img/CVG_logo_2021_white.png
-  name: material
+  #name: material
+  name: readthedocs
+  custom_dir: docs/overrides
+
   features:
     - navigation.instant # ускорение загрузки (SPA)
     - navigation.tracking # динамический URL страницы 
@@ -36,9 +39,16 @@ theme:
       accent: lime
 
 nav:
-  - Мануалы:
+  - Diga Series:
     - Unicore_DX.md
     - Power_Logic.md
+  - 8 Ohm:
+    - CVGaudio_CX408.md
+    - CVGaudio_CL608.md
+    - CVGaudio_TXR608.md
+  - Источники:
+    - CVGaudio_BLUEFOX.md
+    - CVGaudio_M-023Bl.md
   #- Руководство по установке:
   #  - ig/index.md
   #  - Создание репозитория:
@@ -78,10 +88,74 @@ nav:
 #    - yaml
 #    - rust
 
+#extra_css:
+#  - css/pdf.css
+
+
 plugins:
-  - search
+  - search:
+  #- with-pdf:
+        #author: WHO
+        #copyright: ANY TEXT
+        #
+        #cover: false
+        #back_cover: true
+        #cover_title: TITLE TEXT
+        #cover_subtitle: SUBTITLE TEXT
+        #custom_template_path: TEMPLATES PATH
+        #
+        #toc_title: TOC TITLE TEXT
+        #heading_shift: false
+        #toc_level: 3
+        #ordered_chapter_level: 2
+        #excludes_children:
+        #    - 'release-notes/:upgrading'
+        #    - 'release-notes/:changelog'
+        #
+        #exclude_pages:
+        #    - 'bugs/'
+        #    - 'appendix/contribute/'
+        #convert_iframe:
+        #    - src: IFRAME SRC
+        #      img: POSTER IMAGE URL
+        #      text: ALTERNATE TEXT
+        #    - src: ...
+        #two_columns_level: 3
+        #
+        #render_js: true
+        #headless_chrome_path: headless-chromium
+        #
+        #output_path: any-place/document.pdf
+        #enabled_if_env: ENABLE_PDF_EXPORT
+        #
+        #debug_html: true
+        #show_anchors: true
+        #verbose: true
+
   #- include:
   #  src_path: docs/source
-  # - print-site:
-  
+  #- pdf-export:
+      #media_type: pdf-export
+    #- path_to_pdf: "assets/Unicore_DX.pdf"
+
+  - print-site:
+      add_to_navigation: false
+      print_page_title: 'Print Site'
+      add_print_site_banner: true
+      # Table of contents
+      add_table_of_contents: true
+      toc_title: 'Table of Contents'
+      toc_depth: 3
+      # Content-related
+      add_full_urls: false
+      enumerate_headings: true
+      enumerate_figures: true
+      add_cover_page: true
+      cover_page_template: ""
+      path_to_pdf: ""
+      include_css: true
+      enabled: true
+      exclude:
     
+  #- page-to-pdf:
+

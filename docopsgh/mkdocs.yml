@@ -1,21 +1,32 @@
 site_name: CVGaudio Manuals
 
+extra_javascript:
+  - javascripts/extra.js
 
+extra_css:
+  - stylesheets/extra.css
 
 theme:
   favicon: img/favicon.ico
   logo: img/CVG_logo_2021_white.png
-  #name: material
-  name: readthedocs
-  custom_dir: docs/overrides
+  name: material
+  custom_dir: overrides
+
+  #prev_next_buttons_location: none
+  #navigation_depth: 2
+  #collapse_navigation: false
+  #titles_only: True
+  #sticky_navigation: true
 
   features:
     - navigation.instant # ускорение загрузки (SPA)
     - navigation.tracking # динамический URL страницы 
-    - navigation.tabs # перенос названий документов в горизонтальное меню
-    - navigation.tabs.sticky # горизонтальное меню не скрывается при прокрутке
-    - navigation.indexes # главные страницы разделов не отображаются в меню
+    #- navigation.tabs # перенос названий документов в горизонтальное меню
+    #- navigation.tabs.sticky # горизонтальное меню не скрывается при прокрутке
+    #- navigation.indexes # главные страницы разделов не отображаются в меню
     - navigation.top # вкл. кнопку возврата наверх
+    #- navigation.expand # раскрытие всех веток
+    - navigation.path
 
     - navigation.sections
     - toc.integrate
@@ -24,31 +35,34 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+
+
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/brightness-7
         name: Switch to dark mode
-      primary: grey
+      primary: deep orange
       accent: purple 
     - scheme: slate 
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: Switch to light mode    
       primary: grey
       accent: lime
 
 nav:
-  - Diga Series:
-    - Unicore_DX.md
-    - Power_Logic.md
-  - 8 Ohm:
-    - CVGaudio_CX408.md
-    - CVGaudio_CL608.md
-    - CVGaudio_TXR608.md
-  - Источники:
-    - CVGaudio_BLUEFOX.md
-    - CVGaudio_M-023Bl.md
+  - manuals:
+    - Diga Series:
+      - Unicore_DX.md
+      - Power_Logic.md
+    - 8 Ohm:
+      - CVGaudio_CX408.md
+      - CVGaudio_CL608.md
+      - CVGaudio_TXR608.md
+    - Источники:
+      - CVGaudio_BLUEFOX.md
+      - CVGaudio_M-023Bl.md
   #- Руководство по установке:
   #  - ig/index.md
   #  - Создание репозитория:
@@ -65,32 +79,8 @@ nav:
   #  - 'Абобус': 'about.md' 
 
 
-#theme: readthedocs
-
-#theme: 
-#  name: readthedocs
-#  extra_css:
-#  - style.css
-#  nav_style: dark
-#  logo: C:\Users\Egor-\Desktop\habr\docopsgh\docs\img\CVG_logo_2021_white.png
-#  locale: en
-#  shortcuts:
-#    help: 191    # ?
-#    next: 78     # n
-#    previous: 80 # p
-#    search: 83   # s
-
-
-#theme:
-#  name: mkdocs
-#  highlightjs: true
-#  hljs_languages:
-#    - yaml
-#    - rust
-
-#extra_css:
-#  - css/pdf.css
-
+repo_url: https://www.cvg.ru/
+repo_name: cvg.ru
 
 plugins:
   - search:
@@ -131,12 +121,6 @@ plugins:
         #debug_html: true
         #show_anchors: true
         #verbose: true
-
-  #- include:
-  #  src_path: docs/source
-  #- pdf-export:
-      #media_type: pdf-export
-    #- path_to_pdf: "assets/Unicore_DX.pdf"
 
   - print-site:
       add_to_navigation: false

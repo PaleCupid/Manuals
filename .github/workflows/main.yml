@@ -1,5 +1,4 @@
 name: ci 
-theme: jekyll-theme-minimal
 on:
   push:
     branches:

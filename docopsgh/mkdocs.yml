@@ -16,7 +16,7 @@ theme:
   #navigation_depth: 2
   #collapse_navigation: false
   #titles_only: True
-  #sticky_navigation: true
+  #sticky_navigation: true 
 
   features:
     - navigation.instant # ускорение загрузки (SPA)

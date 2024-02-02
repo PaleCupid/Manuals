@@ -1,6 +1,6 @@
 body {
   background: hsl(0.15turn 90% 75%);
-  background-image: url(back.jpeg);
+  background-image: url("../stylesheets/back.jpeg");
   /* or, using CSS variables */
 /*  --md-default-bg-color: red;*/
 }

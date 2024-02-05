@@ -1,7 +1,7 @@
 site_name: CVGaudio Manuals
 
-extra_javascript:
-  - javascripts/extra.js
+#extra_javascript:
+  #- javascripts/extra.js
 
 extra_css:
   - stylesheets/extra.css
@@ -21,14 +21,14 @@ theme:
   features:
     - navigation.instant # ускорение загрузки (SPA)
     - navigation.tracking # динамический URL страницы 
-    #- navigation.tabs # перенос названий документов в горизонтальное меню
+    - navigation.tabs # перенос названий документов в горизонтальное меню
     #- navigation.tabs.sticky # горизонтальное меню не скрывается при прокрутке
     #- navigation.indexes # главные страницы разделов не отображаются в меню
     - navigation.top # вкл. кнопку возврата наверх
     #- navigation.expand # раскрытие всех веток
     - navigation.path
 
-    - navigation.sections
+    #- navigation.sections
     - toc.integrate
     - search.suggest
     - search.highlight
@@ -52,6 +52,8 @@ theme:
       accent: lime
 
 nav:
+  - Downloads:
+      - CVGaudio_UnicoreDX.md
   - manuals:
     - Diga Series:
       - Unicore_DX.md
